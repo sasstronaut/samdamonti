@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>About</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+<style>
+    * {
+     font-family: Verdana, Helvetica, sans-serif;
+      box-sizing: border-box;
+    }
+
+
+    body {
+  margin: 0;
+   
+}
+
+a:link, a:visited {
+  background-color: none;
+  color: #6DAC8B;
+  padding: 14px 25px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+}
+
+a:hover, a:active {
+  background-color: none;
+  color: #90D6B4;
+}
+
+
+.header {
+    
+  background-color: none;
+  padding: 20px;
+  text-align: left;
+  color: black;
+  position: absolute;
+  top: 150px;
+  left: 30px;
+  
+}
+
+
+
+
+.overlay {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: rgb(79,133,116);
+  background-color: rgba(79,133,116, 0.9);
+  overflow-x: hidden;
+  transition: 0.5s;
+}
+
+.overlay-content {
+  position: relative;
+  top: 25%;
+  width: 100%;
+  text-align: center;
+  margin-top: 30px;
+}
+
+.overlay a {
+  padding: 8px;
+  text-decoration: none;
+  font-size: 36px;
+  color: white;
+  display: block;
+  transition: 0.3s;
+}
+
+.overlay a:hover, .overlay a:focus {
+  color: #90D6B4;
+}
+
+.overlay .closebtn {
+  position: absolute;
+  top: 20px;
+  left: 35px;
+  font-size: 40px;
+}
+
+@media screen and (max-height: 450px) {
+  .overlay a {font-size: 20px}
+  .overlay .closebtn {
+  font-size: 40px;
+  top: 15px;
+  left: 35px;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+</style>
+</head>
+<body>
+
+
+    <div id="myNav" class="overlay">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <div class="overlay-content">
+          <a href="index.html">Main Page</a>
+          <a href="crutchy.html">A Rover Called Crutchy 2.0</a>
+        </div>
+      </div>
+      
+      
+      <span style="font-size:30px;cursor:pointer;position:absolute;left:45px;top:32px;" onclick="openNav()">&#9776 </span>
+
+
+
+
+    <div class="header">
+        <h1>About Me</h1>
+        <p>Sam is a high school senior who's curious about all things, space and computer related–especially the Mars rovers. </p>
+        <p>Find me on:
+        <a href="https://www.linkedin.com/in/sam-damonti-0427741bb" class="fa fa-linkedin" style="font-size:20px;color:#6DAC8B;"></a>
+        <a href="https://www.instagram.com/sa.mmm__/" class="fa fa-instagram" style="font-size:20px;color:#6DAC8B;"></a>
+        </p>
+        
+        
+      </div>
+
+
+
+
+</body>
+
+<script>
+
+
+function myFunction(x) {
+    x.classList.toggle("change");
+  }
+
+
+  function openNav() {
+  document.getElementById("myNav").style.width = "100%";
+}
+
+function closeNav() {
+  document.getElementById("myNav").style.width = "0%";
+}
+
+
+
+</script>
+
+
+
+
+
